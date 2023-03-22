@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(180deg, #00ff00, #008000);
+    
+}
+#navigation-bar {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    height:50px;
+
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+    text-align:center;
+}
+#navigation-bar > a {
+    color:black;
+    text-decoration:none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding:0 5px;
+    margin:0 10px 0 10px;
+
+    line-height:50px;
+    display:inline-block;
+}
+#navigation-bar > a:hover {
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+}
+.container-fluid {
+    color:black;
+    background-color: white;
+    border-radius:5px;
+    padding: 10px;
+    margin: 100px auto 10px auto;
+    max-width:800px;
+    width:95vw;
+}
+footer {
+    border-radius: 10px 10px 0 0;
+    padding:10px;
+    background-color: #ddffdd;
+
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
