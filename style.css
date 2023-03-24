@@ -1,6 +1,12 @@
-body {
+
+#background {
     background-image: linear-gradient(180deg, #00ff00, #008000);
-    
+    z-index:-1;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
 }
 #navigation-bar {
     background-color: white;
@@ -17,34 +23,63 @@ body {
 #navigation-bar > a {
     color:black;
     text-decoration:none;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding:0 5px;
-    margin:0 10px 0 10px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    padding:0 15px;
+    margin:0;
 
     line-height:50px;
+    height:50px;
     display:inline-block;
+    
 }
 #navigation-bar > a:hover {
-    border-top:4px solid black;
-    border-bottom:4px solid black;
+    border-left-color:black;
+    border-right-color:black;
+
+    /* box-shadow:inset 0px -3px 0px 1px #000000; */
+    /* border-top:4px solid black; */
+    /* border-bottom:4px solid black; */
+}
+#title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position:fixed;
+    height:25px;
+    background-color: white;
+    top:50px;
+    left:0;
+    right:0;
+    width:200px;
+    margin: 0 auto 0 auto;
+    text-align:center;
+    border-radius: 0 0 10px 10px;
+    background-color: #eeffee;
 }
 .container-fluid {
     color:black;
     background-color: white;
     border-radius:5px;
     padding: 10px;
-    margin: 100px auto 10px auto;
+    margin: 150px auto 10px auto;
     max-width:800px;
     width:95vw;
+    text-align:center;
 }
 footer {
     border-radius: 10px 10px 0 0;
     padding:10px;
-    background-color: #ddffdd;
+    background-color: #eeffee;
 
     position:absolute;
     bottom:0;
     left:0;
     right:0;
+    text-align:center;
+}
+
+#confirm-entry {
+    opacity:0;
+}
+#confirm-entry.visible {
+    opacity:1;
 }
